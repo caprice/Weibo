@@ -1,0 +1,96 @@
+@CHARSET "UTF-8";
+
+body {
+  background: #000;
+  width: 800px;
+  height: 480px;
+}
+
+#play_body {
+  width: 800px;
+  height: 480px;
+  background: url(../images/carmode/background.png);
+}
+
+.voice_active {
+  height: 85px;
+  width: 80px;
+  cursor: pointer;
+  position: absolute;
+  top: 315px;
+  left: 30px;
+}
+
+.help_active {
+  padding-top: 55px;
+  cursor: pointer;
+  float: right;
+  height: 85px;
+}
+
+.channel_active {
+  position: absolute;
+  padding-top: 5px;
+  cursor: pointer;
+  top: 330px;
+  height: 85px;
+  left: 650px;
+}
+
+#play_control {
+  width: 350px;
+  position: absolute;
+  top: 300px;
+  left: 240px;
+}
+
+#channel_icon {
+  width: 300px;
+  position: absolute;
+  top: 100px;
+  left: 225px;
+}
+
+.progress_bar_bg {
+  position: absolute;
+  top: 240px;
+  left: 80px;
+  width: 570px;
+}
+
+.progress_bar_line {
+  position: absolute;
+  width: 0px;
+  height: 30px;
+  left: 120px;
+  top: 250px;
+}
+
+.progress_line_bg {
+  position: absolute;
+  width: 500px;
+  left: 120px;
+  top: 260px;
+}
+
+div #progress_bar{
+  display:none;
+}
+
+.play_wave1 {
+  position: absolute;
+  top: 180px;
+  left: 50px
+}
+
+.play_wave2 {
+  position: absolute;
+  top: 170px;
+  left: 80px;
+}
+
+.play_wave3 {
+  position: absolute;
+  top: 175px;
+  left: 5px;
+}

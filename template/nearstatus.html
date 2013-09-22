@@ -1,0 +1,25 @@
+{{#statuses}}
+<li id="item_{{id}}" itemid="{{id}}" class="oneInLine">
+	<div class="userMessageBox">
+		<img width="50" height="50" src="{{formatHeadImg}}">
+		{{#formatV}}<span><img width="30" height="30" src="images/{{formatV}}" border="0"/></span>{{/formatV}}
+	</div>
+	<div class="userNameBox">
+		{{user.name}}<span>{{datefomart}}</span>
+	</div>
+	<div class="contentBox">
+		{{&formattedText}} {{#thumbnail_pic}} <br /> <img src="{{thumbnail_pic}}" />
+		{{/thumbnail_pic}} {{#retweeted_status}}
+		<div class='replyBox'>
+						{{#retweeted_status.user.name}}{{retweeted_status.user.name}}：{{/retweeted_status.user.name}}{{&retweeted_status.formattedText}}
+
+			{{#retweeted_status.thumbnail_pic}} <br /> <img
+				src="{{retweeted_status.thumbnail_pic}}" height="120"/>
+			{{/retweeted_status.thumbnail_pic}}
+		</div>
+		{{/retweeted_status}}
+	</div>
+	<div class="comeFrom">来自 {{source}}</div>
+	<div style="clear: both;"></div>
+</li>
+{{/statuses}}

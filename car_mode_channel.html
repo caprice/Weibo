@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Car Mode Home</title>
+<link rel="Stylesheet" type="text/css" href="css/style.css" />
+<script type="text/javascript" src="basic.js"></script>
+<style type="text/css">
+body {
+  background: url(images/carmode/drive_background.png);
+}
+
+.channel_item {
+  width: 250px;
+  height: 110px;
+  cursor: pointer;
+}
+</style>
+
+</head>
+<body onload="init()">
+  <div style="position: absolute; cursor: pointer; left: 750px; top: 80px">
+    <img id="close_app" src="images/carmode/close.png"
+      onclick="carModeChannel.closeApp()">
+  </div>
+  <table width="800px" height="390px"
+    style="padding-top: 80px; padding-left: 15px;">
+    <tr>
+      <td><img src="images/carmode/quanbu_zhengchang.png"
+        class="channel_item"
+        onmouseover="javascript:this.src='images/carmode/quanbu_dianji.png'"
+        onmouseout="javascript:this.src='images/carmode/quanbu_zhengchang.png'"
+        onclick="carModeChannel.pageJump('all')" /></td>
+      <td><img src="images/carmode/remen_zhengchang.png"
+        class="channel_item"
+        onmouseover="javascript:this.src='images/carmode/remen_dianji.png'"
+        onmouseout="javascript:this.src='images/carmode/remen_zhengchang.png'"
+        onclick="carModeChannel.pageJump('hot')" /></td>
+      <td><img src="images/carmode/pengyou_zhengchang.png"
+        class="channel_item"
+        onmouseover="javascript:this.src='images/carmode/pengyou_dianji.png'"
+        onmouseout="javascript:this.src='images/carmode/pengyou_zhengchang.png'"
+        onclick="carModeChannel.pageJump('friend')" /></td>
+    </tr>
+    <tr>
+      <td><img src="images/carmode/keji_zhengchang.png"
+        class="channel_item"
+        onmouseover="javascript:this.src='images/carmode/keji_dianji.png'"
+        onmouseout="javascript:this.src='images/carmode/keji_zhengchang.png'"
+        onclick="carModeChannel.pageJump('science')" /></td>
+      <td><img src="images/carmode/tiyu_zhengchang.png"
+        class="channel_item"
+        onmouseover="javascript:this.src='images/carmode/tiyu_dianji.png'"
+        onmouseout="javascript:this.src='images/carmode/tiyu_zhengchang.png'"
+        onclick="carModeChannel.pageJump('sports')" /></td>
+      <td><img src="images/carmode/zhoubian_zhengchang.png"
+        class="channel_item"
+        onmouseover="javascript:this.src='images/carmode/zhoubian_dianji.png'"
+        onmouseout="javascript:this.src='images/carmode/zhoubian_zhengchang.png'"
+        onclick="carModeChannel.pageJump('nearby')" /></td>
+    </tr>
+    <tr>
+      <td><img src="images/carmode/xinwen_zhengchang.png"
+        class="channel_item"
+        onmouseover="javascript:this.src='images/carmode/xinwen_dianji.png'"
+        onmouseout="javascript:this.src='images/carmode/xinwen_zhengchang.png'"
+        onclick="carModeChannel.pageJump('news')" /></td>
+      <td><img src="images/carmode/shangye_zhengchang.png"
+        class="channel_item"
+        onmouseover="javascript:this.src='images/carmode/shangye_dianji.png'"
+        onmouseout="javascript:this.src='images/carmode/shangye_zhengchang.png'"
+        onclick="carModeChannel.pageJump('business')" /></td>
+      <td><img src="images/carmode/yule_zhengchang.png"
+        class="channel_item"
+        onmouseover="javascript:this.src='images/carmode/yule_dianji.png'"
+        onmouseout="javascript:this.src='images/carmode/yule_zhengchang.png'"
+        onclick="carModeChannel.pageJump('recreation')" /></td>
+    </tr>
+  </table>
+</body>
+</html>

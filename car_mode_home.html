@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Car Mode Home</title>
+<link rel="Stylesheet" type="text/css" href="css/style.css" />
+<link rel="Stylesheet" type="text/css" href="css/car_mode_home.html.css" />
+<script type="text/javascript" src="basic.js"></script>
+
+</head>
+<body onload="init()">
+	<div style="position: absolute; cursor: pointer; left: 750px; top: 55px;">
+		<img id="close_app" src="images/carmode/close.png"
+			onclick="carModeHome.closeApp()">
+	</div>
+	<div id="log_div"
+		style="position: absolute; width: 600px; height: 350px; top: 90px; background: #FFF; z-index: 1000; display: none; overflow: scroll;"></div>
+	<div
+		style="position: absolute; left: 600px; z-index: 2000; top: 160px;">
+		<button id="btn_log" onclick="logControl()">Show Log</button>
+	</div>
+	<div id="play_body">
+		<img src="images/carmode/voice.png" class="voice_active"
+			onmouseover="javascript:this.src='images/carmode/voice_touch.png'"
+			onmouseout="javascript:this.src='images/carmode/voice.png'"
+			onclick="carModeHome.voiceActive()"> <img
+			src="images/carmode/help.png" class="help_active"
+			onmouseover="javascript:this.src='images/carmode/help_touch.png'"
+			onmouseout="javascript:this.src='images/carmode/help.png'"
+			onclick="carModeHome.helpActive()"> <img
+			src="images/carmode/channel.png" class="channel_active"
+			onmouseover="javascript:this.src='images/carmode/channel_touch.png'"
+			onmouseout="javascript:this.src='images/carmode/channel.png'"
+			onclick="carModeHome.channelActive()"> <img id="channel_icon">
+
+		<div id="progress_bar">
+			<img alt="" src="images/carmode/box_short.png"
+				class="progress_bar_bg"> <img alt=""
+				src="images/carmode/progress_bg.png" class="progress_line_bg">
+			<img alt="" id="progress_bar_line"
+				src="images/carmode/light_line.png" class="progress_bar_line">
+			<span id="time_display"
+				style="color: #FFF; font-size: 18px; display: block; position: absolute; top: 250px; left: 660px"></span>
+		</div>
+    <div>
+      <img alt="" id="play_wave1" src="images/carmode/wave_1.png" class="play_wave1">
+      <img alt="" id="play_wave2" src="images/carmode/wave_2.png" class="play_wave2">
+      <img alt="" id="play_wave3" src="images/carmode/wave_3.png" class="play_wave3">
+    </div>
+		<div id="play_control">
+			<img alt="" src="images/carmode/previous.png"
+				style="vertical-align: middle; cursor: pointer;"
+				onmouseover="javascript:this.src='images/carmode/previous_touch.png'"
+				onmouseout="javascript:this.src='images/carmode/previous.png'"
+				onclick="carModeHome.doPrevious()"> <img id="pause_btn" alt=""
+				src="images/carmode/suspend.png"
+				style="vertical-align: middle; cursor: pointer;"
+				onmouseover="javascript:this.src='images/carmode/suspend_touch.png'"
+				onmouseout="javascript:this.src='images/carmode/suspend.png'"
+				onclick="carModeHome.doPause()"> <img id="play_btn" alt=""
+				src="images/carmode/bofang_zhengchang.png"
+				style="vertical-align: middle; cursor: pointer; display: none;"
+				onmouseover="javascript:this.src='images/carmode/bofang_dianji.png'"
+				onmouseout="javascript:this.src='images/carmode/bofang_zhengchang.png'"
+				onclick="carModeHome.doPlay()"> <img alt=""
+				src="images/carmode/next.png"
+				style="vertical-align: middle; cursor: pointer;"
+				onmouseover="javascript:this.src='images/carmode/next_touch.png'"
+				onmouseout="javascript:this.src='images/carmode/next.png'"
+				onclick="carModeHome.doNext()">
+		</div>
+	</div>
+	<div style="clear: both;"></div>
+</body>
+</html>

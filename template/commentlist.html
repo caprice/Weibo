@@ -1,0 +1,14 @@
+{{#comments}}
+<li id="item_{{id}}" itemid="{{id}}" class="oneInLine2">
+	<div class="userMessageBox">
+		<img width="50" height="50" src="{{formatHeadImg}}">
+		{{#formatV}}<span><img width="30" height="30" src="images/{{formatV}}" border="0"/></span>{{/formatV}}
+	</div>
+	<div class="userNameBox2">
+		{{user.name}}<span>{{datefomart}}</span></div>
+	<div class="contentBox2">
+		{{&formattedText}}</div>
+	<div style="clear: both;">
+	</div>
+</li>
+{{/comments}}

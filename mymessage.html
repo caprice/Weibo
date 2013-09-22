@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>我的微博消息列表</title>
+<link rel="Stylesheet" type="text/css" href="css/style.css" />
+
+<script type="text/javascript" src="basic.js"></script>
+
+</head>
+<body onload="init()">
+	<div id="pageBox">
+		<!--头部框架开始-->
+		<div id="topBox">
+			<!-- head -->
+			<div id="indexTop">
+				<ul>
+					<li class="logo"></li>
+					<!--新浪logo-->
+					<li class="hot" onclick="javascript:location.href='mymessage.html';">
+						<div class="hotLeftBg"></div>
+						<div class="hotNumber">
+							<a class="white" hidefocus="true" id="lnkMCmt"
+								href="mymessage.html">0</a><span></span>
+						</div> <!---数字连接-->
+						<div class="hotRightBg"></div>
+					</li>
+					<li class="hot" onclick="javascript:location.href='mymessage.html';">
+						<div class="hotLeftBg"></div>
+						<div class="hotNumber">
+							<a class="white" hidefocus="true" id="lnkCmt"
+								href="mymessage.html">0</a><span></span>
+						</div> <!---数字连接-->
+						<div class="hotRightBg"></div>
+					</li>
+					<li class="bgLine"></li>
+					<li class="editBotton"><a hidefocus="true" href="post.html">
+							<img width="36" height="37" border="0" src="images/3.png">
+					</a></li>
+					<!---编辑按钮-->
+					<li class="columnBox" id="liUserName">
+					<a class="green" id="lnkUserName" href="#">加载中...</a>
+					   <span class="arrowDown">
+					   <img width="14" height="8"
+						border="0" src="images/10.png">
+					   </span>
+					   <span class="wd"></span>
+					</li>
+					<!---箭头向下-->
+					<!---右侧按钮顺序需反向排列---->
+					<li style="float: right;" id="lnkRefresh" class="bottonRefresh"></li>
+					<!---刷新-->
+					<li onclick="chkPorS(this);" style="float: right;"
+						class="bottonSoundPlay"></li>
+					<!---静音--->
+					<li style="float: right;" class="bottonPlay"></li>
+					<!---播放--->
+					<li style="float: right;" class="bottonForword"></li>
+					<!---前进--->
+				</ul>
+			</div>
+
+
+		</div>
+		<!--头部框架结束-->
+		<!--菜单框架开始-->
+		<div id="leftBox">
+		<div id="menuBox">
+				<ul>
+					<a href="default.html">
+						<li class="leftIndex_A"></li>
+					</a>
+					<a href="mentionstatus.html">
+						<li class="leftMessage_A"></li>
+					</a>
+					<a href="more.html">
+						<li class="leftMore_A"></li>
+					</a>
+				</ul>
+			</div>
+		</div>
+		<!--菜单框架结束-->
+		<!--主内容框架开始-->
+		<div id="bodyFrameBox">
+			<div id="listBox">
+				<ul>
+					<li class="ListMenu"><a href="mentionstatus.html?isRefresh=1"
+						id="lnkMentions">0条微博提到我，刷新看看</a></li>
+					<li class="ListMenu"><a
+						href="receivedcomment.html?isRefresh=1" id="lnkComments">0条新评论，刷新看看</a></li>
+				</ul>
+			</div>
+		</div>
+		<!--主内容框架结束-->
+	</div>
+</body>
+</html>

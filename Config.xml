@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<gmWebApp>
+	<AppID>38366755</AppID>
+	<AppType>Local</AppType>
+	<FriendlyName>Weibo</FriendlyName>
+	<VehicleStatus>Drive</VehicleStatus>
+	<AutoStart>false</AutoStart>
+	<AppCategory>Audio</AppCategory>
+	<RemotePath></RemotePath>
+	<IconURL>images/app_icon.png</IconURL>
+	<MainURL>splash.html</MainURL>
+	<AppVersion>0.1.0</AppVersion>
+	<IconDisplay>Normal</IconDisplay>
+	<IconDisplay>Normal</IconDisplay> 
+    <Render>Normal</Render> 
+</gmWebApp>

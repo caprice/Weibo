@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>发布评论</title>
+	<link rel="Stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/style_gm.css" />
+	<script type="text/javascript" src="lib/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript"src="js/chn_py_word_lib.js"></script>
+	<script type="text/javascript"src="js/keyboard.js"></script>
+	<script type="text/javascript" src="basic.js"></script>
+</head>
+<body onload="init()">
+	<div id="pageBox">
+		<!--头部框架开始-->
+		<div id="topBox">
+	    	<ul>
+				<li id="alertMsg">还可以输入<span id="used">140</span>个字</li>
+	        </ul>
+		</div>
+		<!--头部框架结束-->
+		<!--主内容框架开始-->
+		<div id="page1">
+			<div id="bodyFrameBox3">
+				<ul>
+					<li class="messageBox3">
+						<textarea name="textarea" type="text" disabled="disabled" id="txt_content" class="textareaBox"></textarea>
+					</li>
+				</ul>
+			</div>
+			<!--主内容框架结束-->
+			<div id="bottomBox3">
+				<ul>
+					<li id="btn_quit" class="quit"><a href="#" class="white">取消</a></li>
+					<li id="btn_send" class="send"><a href="#" class="white">发送</a></li>
+            		<li class="columnBox2"><font class="white" style="color: #000000;">发布评论</font></li>
+					
+				</ul>
+			</div>
+		</div>
+		<div id="customkeyboard" style="z-index:999"></div>
+	</div>
+</body>
+</html>

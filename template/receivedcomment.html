@@ -1,0 +1,17 @@
+﻿{{#comments}}
+<li id="item_{{id}}" itemid="{{id}}" class="oneInLine">
+	<div class="userMessageBox">
+		<img width="50" height="50" src="{{formatHeadImg}}">
+		{{#formatV}}<span><img width="30" height="30" src="images/{{formatV}}" border="0"/></span>{{/formatV}}
+	</div>
+	<div class="userNameBox">
+		{{user.name}}<span>{{datefomart}}</span></div>
+	<div class="contentBox">
+		{{&formattedText}}</div>
+		<div class='replyBox'>
+						回复我的微博：{{&status.formattedText}}
+		</div>
+	<div style="clear: both;">
+	</div>
+</li>
+{{/comments}}

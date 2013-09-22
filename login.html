@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>微博登录</title>
+<link rel="Stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/style_gm.css" />
+<script type="text/javascript" src="lib/jquery-1.7.2.min.js"></script>
+<script type="text/javascript"src="js/chn_py_word_lib.js"></script>
+<script type="text/javascript"src="js/keyboard.js"></script>
+<script type="text/javascript" src="js/logHelper.js"></script>
+<script type="text/javascript" src="basic.js"></script>
+</head>
+<body onload="init()">
+	
+	<div id="pageBox" style="background:url(images/13.png) no-repeat">
+	<div id="topBox" style="visibility:hidden;"></div>
+		<!--主内容框架开始-->
+		<div id="loginPag" style="margin-top:-100px">
+			<ul>
+				<li class="inputUser"><input type="text" id="tbUid"
+					name="username" placeholder="邮箱/会员账号/手机号" required autofocus="true" /></li>
+				<li class="inputPass"><input type="password" id="tbPwd"
+					name="password" value="" required="请填写" /></li>
+				<li class="ChkSave"><div class="LoginNo" id="setAutoLogin"></div>
+					<span id="span_auto">下次自动登录</span> <input type="hidden" name="type" id="chkAuto"
+					value="1" /></li>
+				<li class="loginSubMit"><img name="imageField"
+					src="images/15.png" id="login"/></li>
+					<li>
+					<button style="position: absolute;top: 420px;left: 300px;
+					"
+				onclick="$('#tbUid').val('zti3bmbo@sina.cn');$('#tbPwd').val('a135246');$('#login').click()">暴走肉丸子</button>
+			<button style="position: absolute;top: 420px;left: 400px;"
+				onclick="$('#tbUid').val('u3scnidn@sina.cn');$('#tbPwd').val('a135246');;$('#login').click()">一生珍贵</button>
+				<button style="position: absolute;top: 420px;left: 400px;"
+				onclick="$('#tbUid').val('13501828255');$('#tbPwd').val('1233211234567');;$('#login').click()">盛夏的微光</button>
+					</li>
+			</ul>
+
+		</div>
+		<div id="customkeyboard" style="z-index:999"></div>
+		<!--主内容框架结束-->
+	</div>
+
+
+	<script type="text/javascript">
+		bypassCredentialCheck = true;
+		bypassMonitor = true;
+	</script>
+</body>
+</html>

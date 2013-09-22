@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>新浪微博</title>
+<link rel="Stylesheet" type="text/css" href="css/jquery.jscrollpane.css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="basic.js"></script>
+</head>
+<body onload="init()">
+	<div id="pageBox">
+		<!--头部框架开始-->
+		<div id="topBox">
+		
+		</div>
+		<!--头部框架结束-->
+		<!--菜单框架开始-->
+		<div id="centerBox" nowrap>
+		<!--左侧隐藏列表开始-->
+            <div id="leftList">
+               
+            </div>
+            <!--左侧隐藏结束-->
+            <!--菜单框架开始-->
+		<div id="leftBox">
+			<div id="menuBox">
+				<ul>
+				<li class="leftIndex_B" onclick="window.location='default.html'"></li>
+				                <li class="leftMessage_A" onclick="window.location='mentionstatus.html?isRefresh=1'">
+                    <div class="bannerHitHum" id="lnkCmtall" style="display:none">
+                        <div class="hotLeftBg"></div>
+                        <div class="hotNumber"><a href="mentionstatus.html?isRefresh=1" class="white">22</a><span></span></div>
+                        <div class="hotRightBg"></div>
+                    </div>
+                </li>
+				<li class="leftMore_A" onmouseover="this.className='leftMore_B';" onmouseout="this.className='leftMore_A';" onclick="window.location='more.html'"></li>
+				</ul>
+			</div>
+		</div>
+		<!--菜单框架结束-->
+		<!--主内容框架开始-->
+		<div id="bodyFrameBox">
+			<div id="listBox" class="scroll-pane">
+				<ul id="content"></ul>
+			</div>
+		</div>
+		</div>
+		<!--主内容框架结束-->
+		<!--页脚框架开始-->
+		<div id="bottomBox">
+			<ul>
+				<li class="bottonRefresh" id="lnkRefresh"></li>
+				<!---刷新-->
+				<!---编辑-->
+				<li class="bottonForword" id="lnkForword"></li>
+				<li class="editBotton" onclick="window.location='post.html'"></li>
+				<li class="columnBox" id="liUserName"><a class="white" href="#"
+					id="lnkUserName">加载中</a> <span class="arrow"><a href="#"><img id="lnkarrow"
+							src="images/6.png" width="24" height="13" border="0" /></a></span>
+				<!---箭头向下--> <span class="wd"></span>
+               	</li>
+				<!---右侧按钮顺序需反向排列---->
+				<!---前进--->
+			</ul>
+		</div>
+		<!--页脚框架结束-->
+	</div>
+</body>
+</html>

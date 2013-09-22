@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>发布新浪微博</title>
+<link rel="Stylesheet" type="text/css" href="css/jquery.jscrollpane.css" />
+	<link rel="Stylesheet" type="text/css" href="css/style.css" />
+
+	<script type="text/javascript" src="basic.js"></script>
+
+</head>
+<body onload="init()">
+	<div id="pageBox">
+	<!--头部框架开始-->
+	<div id="topBox"></div>
+	<!--头部框架结束-->
+	
+	
+	<!--菜单框架开始-->
+	<div id="leftBox">
+		<div id="menuBox">
+			<ul>
+				<a href="#" id="lnkRefresh"><li class="leftRefresh_A" onmouseout="this.className='leftRefresh_A';" onmouseover="this.className='leftRefresh_B';"></li></a>
+				<a href="#" id="lnkComment"><li class="leftComment_A" onmouseover="this.className='leftComment_B';" onmouseout="this.className='leftComment_A';"></li></a>
+				<a href="#" id="lnkTran"><li class="leftForWard_A" onmouseover="this.className='leftForWard_B';" onmouseout="this.className='leftForWard_A';"></li></a>
+			</ul>
+		</div>
+	</div>
+	<!--菜单框架结束-->
+	<!--主内容框架开始-->
+	<div id="bodyFrameBox">
+		<div id="listBox" class="scroll-pane">
+			<ul id="content">
+				<!--循环框架开始-->
+				<li class="oneInLine">
+					<div class="userMessageBox"><img id="imgHead" src="images/ico.png" height="50" width="50" /></div>
+					<div class="userNameBox"  id="dvName">加载中...</div>
+					<div class="contentBox" id="dvContent">加载中...</div>
+					<div style="clear:both;"></div>
+				</li>
+				<!--循环框架结束-->
+				<li class="moreBox" style="background:none;">
+					<div class="readNum" id="dvReadNum"><a href="#" class="green">0</a></div>
+					<div class="reply" id="dvReplyNum"><a href="#" class="green">0</a></div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!--主内容框架结束-->
+    
+    <!--页脚框架开始-->
+	<div id="bottomBox">
+    	<ul>
+        	<li class="bottonBack" id="lnkRego"><a class="white"></a></li>
+        	<li class="bottonHome" onclick="window.location='default.html'"></li>
+            <li class="columnBox"><a href="#" class="white">微博正文</a></li>
+        </ul>
+    </div>
+	<!--页脚框架结束-->
+</div>
+	
+</body>
+</html>

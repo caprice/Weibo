@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>发表新微博</title>
+	<link rel="Stylesheet" type="text/css" href="css/jquery.jscrollpane.css" />
+	<link rel="Stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/style_gm.css" />
+	<script type="text/javascript" src="lib/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript"src="js/chn_py_word_lib.js"></script>
+	<script type="text/javascript"src="js/keyboard.js"></script>
+	<script type="text/javascript" src="basic.js"></script>
+</head>
+<body onload="init()">
+	<div id="pageBox">
+		<!--头部框架开始-->
+		<div id="topBox">
+		</div>
+		<!--头部框架结束-->
+		
+		<div id="page1">
+			<!--主内容框架开始-->
+			<div id="bodyFrameBox2">
+				<ul>
+					<li class="mainTop">
+					<span id="mainTopI"><a href="#"><img src="images/30.png"  border="0" style=" margin-top: -6px;"/></a></span>
+					<span id="mainTopDesc" style="margin-left: 30px;"><a href="#"><img src="images/31.png" border="0" style=" margin-top: -6px;"/></a></span>
+					<span id="mainTopDescTitle"></span></li>
+					<li class="messageBox" style="padding: 0"><textarea name="textarea" type="text" disabled="disabled" id="txt_content" class="textareaBox1"></textarea></li>
+				</ul>
+			</div>
+			<!--主内容框架结束-->
+			<div id="bottomBox2">
+				<ul>
+					<li id="btn_quit" class="quit" style="margin-top: 6px"><a class="white">取消</a></li>
+					<li id="btn_send" class="send" style="margin-top: 6px"><a class="white">发送</a></li>
+					<li class="columnBox2" style="line-height: 70px;">编写新微博</li>
+					<li id="alertMsg1" class="userBox1">还可以输入<span id="used">140</span>个字
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="page2">
+			<!--主内容框架开始-->
+			<div id="bodyFrameBox2">
+				<ul>
+					<li class="mainTop"><span id="mainTopTitle">选择位置</span> <span
+						id="mainTopLine"></span></li>
+					<li class="messageBox" style="padding-left:30px;width: 730px; ">
+						<div id="listBox3" class="listBox3">
+							<ul id="ul_locationlist">
+								<!-- 
+								<li class="listTitle">标题标题标题<span></span></li>
+								<li class="listTitle">标题标题标题</li>
+								<li class="listTitle">标题标题标题</li>
+								<li class="listTitle">标题标题标题</li>
+								<li class="listTitle">标题标题标题</li>
+								<li class="listTitle">标题标题标题</li>
+								<li class="listTitle">标题标题标题</li>
+								<li class="listTitle">标题标题标题</li>
+								<li class="listTitle">标题标题标题</li>
+								<li class="listTitle">标题标题标题</li>
+								<li class="listTitle">标题标题标题</li>
+							</ul>
+							 -->
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!--主内容框架结束-->
+
+			<!--页脚框架开始-->
+			<div id="bottomBox2">
+				<ul>
+					<li class="quit" id="btn_quit1" style="margin-top: 6px"><a class="white">关闭</a></li>
+					<li class="send" id="btn_refresh1" style="margin-top: 6px"><a class="white">更新</a></li>
+				</ul>
+			</div>
+			<!--页脚框架结束-->
+		</div>
+		
+		<div id="page3">
+			<div id="bodyFrameBox2">
+				<ul>
+					<li class="mainTop"><span id="mainTopTitle">联系人</span>
+					<span id="mainTopLine"></span>
+					<span id="mainTopSearchBox"> <span class="searchLeft"></span>
+					<span class="searchArea"><input id="txtSearch" disabled="disabled" type="text" placeholder="在联系人中搜索..." style="width:500px"></span> 
+					<span class="searchRight" id="spnClear"><a href="#"><img border="0" src="images/39.png" width="39" height="40"></a></span>
+					</span></li>
+					<li class="messageBox" style="padding-left:30px;width: 730px; ">
+						<div class="listBanner">最近联系人</div>
+						<div id="listBox2" class="listBox2">
+							<ul id="ulUserContainer">
+								
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div id="bottomBox2">
+				<ul>
+					<li class="quit" id="btn_quit2" style="margin-top: 6px"><a class="white">关闭</a></li>
+				</ul>
+			</div>
+		</div>
+		
+	    <div id="customkeyboard" style="z-index:999"></div>
+	</div>
+</body>
+</html>

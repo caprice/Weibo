@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery
+/jquery-1.4.min.js"></script>
+</head>
+<body>
+<p>����һ�����䡣</p>
+<button>��������</button>
+<script type="text/javascript">
+
+	var status = "����#�Ϻ�ͨ��#�����µ������ع� Ԥ�������Ϻ���չ�׷������һ�׵������?�������£����½γ���·�����µ����ٶȳ��֡��ӵ������������������ӹ��������Ʊ���Ҳ�������飬����ϸ�ڵĴ���ǡ���ô��������ϣ���ܿ��ܻᰲ����1.6TGDI��1.4TGDI������http://t.cn/zOJ8U7k @chilman ���ʥ������ѽ..��ͬ��һ��һֻ..��d��л@Linkaiwei ��~";
+	
+	function filterEmail(text){
+		
+	}
+	
+	function filterMention(text){
+		var reg = /@\w+/gi;
+		
+	}
+	
+	function filterUrl(text){
+		var reg = /http:\/\/t\.cn\/\w+/gi;
+		return text.replace(reg, "");
+	}
+	
+	function filterTopic(text){
+		var reg = /#(.+?)#/gi;
+		return text.replace(reg, "$1");
+	}
+</script>
+</body>
+</html>

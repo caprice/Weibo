@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>我收到的评论</title>
+	<link rel="Stylesheet" type="text/css" href="css/jquery.jscrollpane.css" />
+	<link rel="Stylesheet" type="text/css" href="css/style.css" />
+	<script type="text/javascript" src="basic.js"></script>
+</head>
+<body onload="init()">
+	<div id="pageBox">
+		<!--头部框架开始-->
+		<div id="topBox"></div>
+		<!--头部框架结束-->
+		<!--菜单框架开始-->
+		<div id="leftBox">
+			<div id="menuBox">
+				<ul>
+					<li class="leftIndex_A" onclick="window.location='default.html'"  onmouseover="this.className='leftIndex_B';" onmouseout="this.className='leftIndex_A';"></li>
+                <li class="leftMessage_B" onclick="window.location='mentionstatus.html?isRefresh=1'">
+                    <div class="bannerHitHum" id="lnkCmtall" style="display:none">
+                        <div class="hotLeftBg"></div>
+                        <div class="hotNumber"><a href="mentionstatus.html?isRefresh=1" class="white">0</a><span></span></div>
+                        <div class="hotRightBg"></div>
+                    </div>
+                </li>
+				<li class="leftMore_A" onmouseover="this.className='leftMore_B';" onmouseout="this.className='leftMore_A';" onclick="window.location='more.html'"></li>
+				
+					</ul>
+			</div>
+		</div>
+		<!--菜单框架结束-->
+		<!--主内容框架开始-->
+		<div id="bodyFrameBox">
+			<div id="listBox">
+				<ul id="content">
+				</ul>
+			</div>
+		</div>
+		<!--主内容框架结束-->
+			<div id="bottomBox">
+				<ul>
+				<li class="bottonRefresh2" id="bottonRefresh2"></li>
+					<li class="bottonMe" style="border-bottom:0px solid #FFF;"><a class="white" href="mentionstatus.html?isRefresh=1">@我</a>
+					<div class="bannerHitHum2" id="lnkmt" style="display:none">
+                    <div class="hotLeftBg"></div>
+                    <div class="hotNumber"><a href="mentionstatus.html?isRefresh=1" class="white">0</a><span></span></div><!---数字连接-->
+                    <div class="hotRightBg"></div>
+                </div></li>
+					<li class="bottonComment" style="border-bottom:2px solid #FFF;"><a class="white" href="receivedcomment.html?isRefresh=1">评论</a>
+					<div class="bannerHitHum2" id="lnkcmt" style="display:none">
+                    <div class="hotLeftBg"></div>
+                    <div class="hotNumber"><a href="receivedcomment.html?isRefresh=1" class="white">0</a><span></span></div><!---数字连接-->
+                    <div class="hotRightBg"></div>
+                </div></li>
+				</ul>
+			</div>
+	</div>
+</body>
+</html>
