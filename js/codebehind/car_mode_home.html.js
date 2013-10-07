@@ -28,7 +28,7 @@ var commandRecognizeLoadingDialog;
 
 var speechRecSessionID;
 var filePath;
-var ttsStart = "锄禾日当午，汗滴禾下土。谁知盘中餐，粒粒皆辛苦。春种一粒粟，秋收万颗子。四海无闲田，农夫犹饿死。";
+var ttsStart = "";
 // ******************tts and asr*******************
 
 var playBtn = document.getElementById('play_btn');
@@ -96,12 +96,10 @@ gm.ngi.weibo.carModeHomePage = function() {
   };
   
   var startTTS = function(args) {
-    //args = "新华视点,发表微博：【云南永善：３人私自进入停产煤矿窒息死亡】云南省永善县委宣传部通报，８月３１日桧溪镇发生一起３人私自进入停产煤矿窒息死亡事故，目前遗体已经被找到。事故善后等工作正有序开展。（记者　吉哲鹏）";
-    // add twenty spaces for test
     if (args) {
       args = ttsStart + args;
     }
-    startHttpTTS(args);
+    startHttpTTS_Y(args);
   };
   
   playNextWeibo = function() {
@@ -155,7 +153,7 @@ gm.ngi.weibo.carModeHomePage = function() {
     audio.load();
   };
   
-  var startHttpTTS = function(text) {
+  var startHttpTTS_K = function(text) {
     if (null != audio && audio.played) {
       audio.play();
       return;
@@ -182,6 +180,25 @@ gm.ngi.weibo.carModeHomePage = function() {
         "application/x-www-form-urlencoded");
     iflyClient.send('ttsContent=' + text);
   };
+  
+  var startHttpTTS_Y = function(text) {
+	    if (null != audio && audio.played) {
+	      audio.play();
+	      return;
+	    }
+	    // add twenty spaces for test
+	    if (text) {
+	      text = ttsStart + text;
+	    }
+	    console.log('text weibo:' + text);
+	    var url = sprintf('%s?appkey=%s&userid=%s&id=%s', ttsUrl, asrAppId,
+	        asrUserId, deviceId);
+	    var enStr = sprintf('&type=0&speed=1.0&message=%s',
+	        encodeURIComponent(text));
+	    url = url + enStr;
+	    console.log('url:' + url);
+	    playMP3(url);
+	  };
   
   startPlay = function(playText) {
     startTTS(playText);
